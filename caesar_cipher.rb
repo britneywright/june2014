@@ -32,7 +32,7 @@ end
 
 def caesar_cipher(phrase, number)
   cipher = convert_phrase_to_separate_words(phrase, number)
-  puts cipher
+  return cipher
 end  
 
 alphabet = ("a".."z").to_a
