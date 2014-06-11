@@ -1,23 +1,20 @@
 require 'minitest/autorun'
 require 'minitest/pride'
 
-def alphabet_loop(letter_value)
-  letter_value <= 26 ? letter_value : letter_value - 26  
-end
-
-def convert_letter_to_new_letter(letter, number)
-  letter_value = ALPHABET_VALUES[letter.downcase] + number
+def shift_letter(letter,shift_number)
+  letter_value = ALPHABET_VALUES[letter.downcase] + shift_number
   reversed_hash = ALPHABET_VALUES.invert
-  new_letter = reversed_hash[alphabet_loop(letter_value)]
+  new_letter = reversed_hash[letter_value % 26]
   letter == letter.upcase ? letter.replace(new_letter.upcase) : letter.replace(new_letter)
 end
 
 alphabet = ("a".."z").to_a
-ALPHABET_VALUES = Hash[alphabet.each_with_index.map {|value, index| [value, index + 1]}]
+ALPHABET_VALUES = Hash[alphabet.each_with_index.map {|value, index| [value, index]}]
 
-def caesar_cipher(phrase, number)
-  word = phrase.gsub(/\w/)
-  word.each {|letter| letter.replace(convert_letter_to_new_letter(letter,number))}
+def caesar_cipher(phrase, shift_number)
+  phrase.gsub(/\w/) do |letter| 
+    shift_letter(letter,shift_number)
+  end
 end
 
 describe "caesar cipher shifts the letters in text by a specified number" do
