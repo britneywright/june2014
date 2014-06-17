@@ -1,0 +1,257 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><style>html { font-size: 100%; overflow-y: scroll; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+
+body{
+  color:#444;
+  font-family:Georgia, Palatino, 'Palatino Linotype', Times, 'Times New Roman',
+              "Hiragino Sans GB", "STXihei", "微软雅黑", serif;
+  font-size:12px;
+  line-height:1.5em;
+  background:#fefefe;
+  width: 45em;
+  margin: 10px auto;
+  padding: 1em;
+  outline: 1300px solid #FAFAFA;
+}
+
+a{ color: #0645ad; text-decoration:none;}
+a:visited{ color: #0b0080; }
+a:hover{ color: #06e; }
+a:active{ color:#faa700; }
+a:focus{ outline: thin dotted; }
+a:hover, a:active{ outline: 0; }
+
+span.backtick {
+  border:1px solid #EAEAEA;
+  border-radius:3px;
+  background:#F8F8F8;
+  padding:0 3px 0 3px;
+}
+
+::-moz-selection{background:rgba(255,255,0,0.3);color:#000}
+::selection{background:rgba(255,255,0,0.3);color:#000}
+
+a::-moz-selection{background:rgba(255,255,0,0.3);color:#0645ad}
+a::selection{background:rgba(255,255,0,0.3);color:#0645ad}
+
+p{
+margin:1em 0;
+}
+
+img{
+max-width:100%;
+}
+
+h1,h2,h3,h4,h5,h6{
+font-weight:normal;
+color:#111;
+line-height:1em;
+}
+h4,h5,h6{ font-weight: bold; }
+h1{ font-size:2.5em; }
+h2{ font-size:2em; border-bottom:1px solid silver; padding-bottom: 5px; }
+h3{ font-size:1.5em; }
+h4{ font-size:1.2em; }
+h5{ font-size:1em; }
+h6{ font-size:0.9em; }
+
+blockquote{
+color:#666666;
+margin:0;
+padding-left: 3em;
+border-left: 0.5em #EEE solid;
+}
+hr { display: block; height: 2px; border: 0; border-top: 1px solid #aaa;border-bottom: 1px solid #eee; margin: 1em 0; padding: 0; }
+
+
+pre , code, kbd, samp { 
+  color: #000; 
+  font-family: monospace; 
+  font-size: 0.88em; 
+  border-radius:3px;
+  background-color: #F8F8F8;
+  border: 1px solid #CCC; 
+}
+pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; padding: 5px 12px;}
+pre code { border: 0px !important; padding: 0;}
+code { padding: 0 3px 0 3px; }
+
+b, strong { font-weight: bold; }
+
+dfn { font-style: italic; }
+
+ins { background: #ff9; color: #000; text-decoration: none; }
+
+mark { background: #ff0; color: #000; font-style: italic; font-weight: bold; }
+
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
+
+ul, ol { margin: 1em 0; padding: 0 0 0 2em; }
+li p:last-child { margin:0 }
+dd { margin: 0 0 0 2em; }
+
+img { border: 0; -ms-interpolation-mode: bicubic; vertical-align: middle; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+td { vertical-align: top; }
+
+@media only screen and (min-width: 480px) {
+body{font-size:14px;}
+}
+
+@media only screen and (min-width: 768px) {
+body{font-size:16px;}
+}
+
+@media print {
+  * { background: transparent !important; color: black !important; filter:none !important; -ms-filter: none !important; }
+  body{font-size:12pt; max-width:100%; outline:none;}
+  a, a:visited { text-decoration: underline; }
+  hr { height: 1px; border:0; border-bottom:1px solid black; }
+  a[href]:after { content: " (" attr(href) ")"; }
+  abbr[title]:after { content: " (" attr(title) ")"; }
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }
+  pre, blockquote { border: 1px solid #999; padding-right: 1em; page-break-inside: avoid; }
+  tr, img { page-break-inside: avoid; }
+  img { max-width: 100% !important; }
+  @page :left { margin: 15mm 20mm 15mm 10mm; }
+  @page :right { margin: 15mm 10mm 15mm 20mm; }
+  p, h2, h3 { orphans: 3; widows: 3; }
+  h2, h3 { page-break-after: avoid; }
+}
+</style><title>points_to_ponder</title></head><body><h1 id="points-to-ponder">Points to Ponder</h1>
+<p>Look through these now and then use them to test yourself after doing the assignment</p>
+<p>Note: We recommend you read through the list, do the assignment, and then test yourself by seeing if you can answer all these questions.</p>
+<hr />
+<h4 id="numbers-operators-and-expressions">Numbers, Operators and Expressions:</h4>
+<ul>
+<li>What's the difference between an Integer and a Float?</li>
+<li>
+<p>An Integer is a whole number. A Float is a number with a decimal point. </p>
+</li>
+<li>
+<p>Why should you be careful when converting back and forth between integers and floats?</p>
+</li>
+<li>
+<p>Calculations may not be as exact as intended due to rounding.</p>
+</li>
+<li>
+<p>What's the difference between =, ==, and ===?</p>
+</li>
+<li>= assigns one thing to another </li>
+<li>== compares one thing to another, returns either true or false</li>
+<li>
+<p>=== is an Object operator</p>
+</li>
+<li>
+<p>How do you do exponents in Ruby?</p>
+</li>
+<li>
+<p>use two asterisks between the number and the exponent number</p>
+</li>
+<li>
+<p>What is a range?</p>
+</li>
+<li>
+<p>How do you create a range?</p>
+</li>
+<li>
+<p>a range is created with two or three ellipses between the first and last number, all surrounded by parentheses</p>
+</li>
+<li>
+<p>What's the difference between (1..3) and (1...3)?</p>
+</li>
+<li>
+<p>1..3 includes 1, 2 and 3. 1..3 only includes 1 and 2.</p>
+</li>
+<li>
+<p>What are three ways to create a range?</p>
+</li>
+<li></li>
+</ul>
+<h4 id="strings">Strings:</h4>
+<ul>
+<li>What's the difference between single and double quotes?</li>
+<li>What is string interpolation?</li>
+<li>What are escape characters?</li>
+<li>What are line breaks?</li>
+<li>How do you make other things into strings?</li>
+<li>to_s method</li>
+<li>How do you concatenate strings?</li>
+<li>How do you access a specific character or substring?</li>
+<li>How do you split up strings into arrays?</li>
+<li>How are strings and arrays similar?</li>
+<li>How do you get and clean up user input on the command line?</li>
+<li>What does it mean that strings are "mutable" and why care?</li>
+<li>What is a symbol?</li>
+<li>How is a symbol different from a string?</li>
+<li>What is a Regular Expression (RegEx)?</li>
+<li>How can you center or right-justify a string?</li>
+</ul>
+<h4 id="arrays">Arrays:</h4>
+<ul>
+<li>What are three ways to create an array?</li>
+<li>How do you prepopulate the array with default data?</li>
+<li>How do you access items in an array?</li>
+<li>How can you access a specific group of items in an array?</li>
+<li>How do you modify the items in an array?</li>
+<li>How do you combine arrays?</li>
+<li>How do you find the values in one array that aren't in another?</li>
+<li>How do you find values in both arrays?</li>
+<li>What is the difference between push/pop and shift/unshift?</li>
+<li>What is the shovel operator?</li>
+<li>How is &gt; arr.pop different from &gt; arr[-1]?</li>
+<li>How is pushing or &lt;&lt;ing another array into your array different from just adding them together?</li>
+<li>How do you delete items in an array?</li>
+<li>Why should you be careful deleting items in an array?</li>
+<li>How can you convert arrays to strings?</li>
+<li>How can you convert from other data types to arrays?</li>
+<li>How can you figure out if an array contains a particular value?</li>
+<li>How do you find the biggest item in an array?</li>
+<li>How do you find the smallest item in an array?</li>
+<li>How do you remove any duplicates from your array?</li>
+<li>How to you find out how big an array is?</li>
+<li>How do you put an array in order?</li>
+<li>What are the naming conventions for arrays?</li>
+<li>What should you store in arrays?</li>
+</ul>
+<h4 id="hashes">Hashes:</h4>
+<ul>
+<li>What is a hash?</li>
+<li>What are keys and values?</li>
+<li>How is a hash similar to an Array?</li>
+<li>How is a hash different from an Array?</li>
+<li>What are 3 ways to create a hash?</li>
+<li>What is the hash rocket?</li>
+<li>How do you access data in a hash?</li>
+<li>How do you change data in a hash?</li>
+<li>What types of data are good to store in a hash?</li>
+<li>What are options hashes?</li>
+<li>How do you delete data from a hash?</li>
+<li>How do you add hashes together?</li>
+<li>How do you list out all the keys or values?</li>
+<li>How do you see if the hash contains a key or value?</li>
+<li>What is a set?
+<strong>Dates and Times:</strong></li>
+<li>How do you get the current date and time?</li>
+<li>How do you find just the Year? Month? Hour? Second? Weekday?</li>
+<li>How do you create a Time specifically for 12/25/2013?</li>
+<li>How do you find how many days have passed between two Time's?</li>
+<li>What's the difference between UTC and GMT and Local times?</li>
+<li>How would you find out the time that was 100 seconds ago? 10 days ago?</li>
+</ul>
+<h4 id="other-random-stuff">Other Random Stuff:</h4>
+<ul>
+<li>What is nil?</li>
+<li>How do you check if something is nil?</li>
+<li>What's the difference between nil and blank and empty?</li>
+<li>Are the following nil or empty?</li>
+<li>" ", "", [], [""], {}</li>
+<li>What's the difference between puts and p and print?</li>
+<li>puts creates a new line after each piece of data is returned. p is the same as puts. print does not add a new line after the data is returned.</li>
+<li>What does inspect do?</li>
+<li>What do +=, -=, *= and /= do?</li>
+<li>What is parallel assignment?</li>
+<li>What's the easiest way to swap two variables?</li>
+</ul></body></html>

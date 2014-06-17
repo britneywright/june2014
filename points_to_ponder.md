@@ -12,11 +12,23 @@ Note: We recommend you read through the list, do the assignment, and then test y
   - Calculations may not be as exact as intended due to rounding.
 
 - What's the difference between =, ==, and ===?
+  - = assigns one thing to another 
+  - == compares one thing to another, returns either true or false
+  - === is an Object operator
+
 - How do you do exponents in Ruby?
+  - use two asterisks between the number and the exponent number
+
 - What is a range?
+
 - How do you create a range?
+  - a range is created with two or three ellipses between the first and last number, all surrounded by parentheses
+
 - What's the difference between (1..3) and (1...3)?
+  - 1..3 includes 1, 2 and 3. 1..3 only includes 1 and 2.
+
 - What are three ways to create a range?
+  - 
 
 ####Strings:
 - What's the difference between single and double quotes?
@@ -24,6 +36,7 @@ Note: We recommend you read through the list, do the assignment, and then test y
 - What are escape characters?
 - What are line breaks?
 - How do you make other things into strings?
+  - to_s method
 - How do you concatenate strings?
 - How do you access a specific character or substring?
 - How do you split up strings into arrays?
