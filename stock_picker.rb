@@ -1,13 +1,13 @@
 require 'minitest/autorun'
 require 'minitest/pride'
 
-def stock_picker(days)
+def stock_picker(stock_value)
   best_days = []
-  days.each do |buy|
-    days.each do |sell|
+  stock_value.each do |buy|
+    stock_value.each do |sell|
       profit = sell - buy
-      if days.find_index(sell) > days.find_index(buy)
-        best_days << [days.index(buy), days.index(sell), profit]
+      if stock_value.find_index(sell) > stock_value.find_index(buy)
+        best_days << [stock_value.index(buy), stock_value.index(sell), profit]
       end
     end
   end
