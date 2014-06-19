@@ -2,18 +2,19 @@ require 'minitest/autorun'
 require 'minitest/pride'
 
 def stock_picker(stock_value)
-  best_days = []
+  best_days = 0
+  profit = 0
   stock_value.each do |buy|
     stock_value.each do |sell|
-      profit = sell - buy
-      if stock_value.find_index(sell) > stock_value.find_index(buy)
-        best_days << [stock_value.index(buy), stock_value.index(sell), profit]
-      end
+      if stock_value.index(sell) > stock_value.index(buy)
+        if (sell - buy) > profit
+          profit = sell - buy
+          best_days = [stock_value.index(buy), stock_value.index(sell)]
+        end  
+      end 
     end
   end
-  highest_profit = best_days.max_by{ |buy,sell, profit| profit }
-  highest_profit.pop
-  highest_profit
+  best_days
 end
 
 describe "given a number of days with different stock values return the best day to buy and the best day to sell" do
