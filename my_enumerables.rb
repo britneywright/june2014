@@ -2,7 +2,7 @@ module Enumerable
 
   def my_each
     for num in self
-      num
+      print self[num]
     end
   end
 
@@ -10,6 +10,11 @@ module Enumerable
   end
 
   def my_select
+    result_array = []
+    for num in self
+      result_array << self[num]
+    end
+    return result_array
   end
 
   def my_all?
