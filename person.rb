@@ -27,12 +27,19 @@ class Person
   def low
     "#{@name} is doing better than usual. Time for cake!"
   end
-    
+
   private
   def person_params
     params.permit(:name, :anxiety_level)
   end
 end
 
-britney = Person.new("Britney")
+  class Crazy < Person
+
+    def low
+      "#{@name} is still cray-cray."
+    end
+  end
+
+britney = Crazy.new("Britney")
 puts britney.anxiety_level

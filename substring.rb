@@ -3,7 +3,7 @@ require 'minitest/pride'
 
 def substrings(phrase, dictionary)
   frequencies = Hash.new(0)
-  sorted_phrase = phrase.downcase.split(/\W+/).sort.join
+  sorted_phrase = phrase.downcase.scan(/[\w']+/).sort.join
     dictionary.each do |entry| 
       if sorted_phrase.include?(entry)
         frequencies[entry] += sorted_phrase.scan(/#{entry}/).count
