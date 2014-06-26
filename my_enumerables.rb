@@ -1,20 +1,12 @@
 module Enumerable
 
   def my_each
-    for num in self
-      print self[num]
-    end
   end
 
   def my_each_with_index
   end
 
   def my_select
-    result_array = []
-    for num in self
-      result_array << self[num]
-    end
-    return result_array
   end
 
   def my_all?
@@ -38,5 +30,3 @@ end
 
 def multiply_els(arr)
 end
-
-print [1,2,3].my_each

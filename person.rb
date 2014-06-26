@@ -1,4 +1,11 @@
+module Debug
+  def holla
+      "Holla!"
+  end
+end
+
 class Person
+  include Debug
 
   def initialize(name)
     @name = name
@@ -42,4 +49,5 @@ end
   end
 
 britney = Crazy.new("Britney")
-puts britney.anxiety_level
+p britney.anxiety_level
+p britney.holla
